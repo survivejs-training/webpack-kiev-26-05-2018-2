@@ -17,3 +17,43 @@
 * How to improve performance of my project.
 
 ## Examples
+
+### Loader
+
+```javascript
+module.exports = input => input + input;
+```
+
+### Plugin
+
+```javascript
+class DemoPlugin {
+  apply(compiler) {
+    ...
+  }
+}
+```
+
+### Resolve
+
+```javascript
+import "foo";
+```
+
+```javascript
+const config = {
+  resolve: {
+    alias: {
+      foo: path.resolve(__dirname, "bar/foo.js"),
+    },
+    extensions: [
+      ".ts", ".js"
+    ],
+    modules: [
+      path.resolve(__dirname, "my_modules"),
+      path.resolve(__dirname, "node_modules"),
+    ],
+  },
+};
+```
+
