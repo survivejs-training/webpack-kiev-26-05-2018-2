@@ -10,6 +10,11 @@ const commonConfig = merge([
         title: "Webpack demo",
       }),
     ],
+    optimization: {
+      splitChunks: {
+        chunks: "initial",
+      },
+    },
   },
 ]);
 
