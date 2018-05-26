@@ -13,6 +13,7 @@
 
 ## Goals
 
-* TODO
+* Learn to maintain webpack configuration.
+* How to improve performance of my project.
 
 ## Examples
