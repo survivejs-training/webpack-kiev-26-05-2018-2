@@ -12,7 +12,7 @@ const commonConfig = merge([
     ],
     optimization: {
       splitChunks: {
-        chunks: "initial",
+        chunks: "all",
       },
     },
   },
